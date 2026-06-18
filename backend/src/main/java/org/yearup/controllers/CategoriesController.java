@@ -66,11 +66,12 @@ public class CategoriesController
     // add annotation to call this method for a POST action
     // add annotation to ensure that only an ADMIN can call this function
     @PostMapping
-    @PreAuthorize("hasRole('')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<Category> addCategory(@RequestBody Category category)
     {
         // insert the category and return it with status 201 Created
-        return null;
+        Category newCategory = categoryService.create(category);
+        return ResponseEntity.status(HttpStatus.CREATED).body(newCategory);
     }
 
     // add annotation to call this method for a PUT (update) action - the url path must include the categoryId
