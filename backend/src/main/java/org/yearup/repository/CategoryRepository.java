@@ -7,4 +7,6 @@ import org.yearup.models.Category;
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Integer>
 {
+    //TODO Delete if not used
+    Category findByCategoryId(int id);
 }
