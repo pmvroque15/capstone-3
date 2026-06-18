@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Finished debugging POST request where the admin can only create a category . Bug#6 and Bug#7 closed" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Finished debugging GET request where the admin can populate the categories after adding and getting the new category by id . Bug#8 and Bug#9 closed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/CategoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/CategoriesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/CategoryService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +92,7 @@
       <workItem from="1781809266635" duration="6456000" />
       <workItem from="1781820042111" duration="80000" />
       <workItem from="1781820150102" duration="36000" />
-      <workItem from="1781820255912" duration="3386000" />
+      <workItem from="1781820255912" duration="4445000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -138,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781823357583</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finished debugging GET request where the admin can populate the categories after adding and getting the new category by id . Bug#8 and Bug#9 closed">
+      <option name="closed" value="true" />
+      <created>1781823892432</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1781823892432</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +163,7 @@
     <MESSAGE value="Finished debugging GET Request of list of products by its category id. Bug#4 closed" />
     <MESSAGE value="Finished debugging POST request where the admin can only create a category . Bug#5 closed" />
     <MESSAGE value="Finished debugging POST request where the admin can only create a category . Bug#6 and Bug#7 closed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished debugging POST request where the admin can only create a category . Bug#6 and Bug#7 closed" />
+    <MESSAGE value="Finished debugging GET request where the admin can populate the categories after adding and getting the new category by id . Bug#8 and Bug#9 closed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished debugging GET request where the admin can populate the categories after adding and getting the new category by id . Bug#8 and Bug#9 closed" />
   </component>
 </project>
