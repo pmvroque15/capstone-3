@@ -3,6 +3,7 @@ package org.yearup.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.yearup.models.Category;
 import org.yearup.models.Product;
@@ -54,15 +55,18 @@ public class CategoriesController
 
     // the url to return all products in category 1 would look like this
     // https://localhost:8080/categories/1/products
-    @GetMapping("{categoryId}/products")
-    public List<Product> getProductsById(@PathVariable int categoryId)
+    @GetMapping("/{categoryId}/products")
+    public ResponseEntity<List<Product>> getProductsById(@PathVariable int categoryId)
     {
+        List<Product> products = productService.listByCategoryId(categoryId);
         // get a list of product by categoryId
-        return null;
+        return ResponseEntity.ok(products);
     }
 
     // add annotation to call this method for a POST action
     // add annotation to ensure that only an ADMIN can call this function
+    @PostMapping
+    @PreAuthorize("hasRole('')")
     public ResponseEntity<Category> addCategory(@RequestBody Category category)
     {
         // insert the category and return it with status 201 Created
