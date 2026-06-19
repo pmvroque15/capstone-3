@@ -50,6 +50,7 @@ public class ProductService
         Product existing = productRepository.findById(productId).orElseThrow();
         existing.setName(product.getName());
         existing.setPrice(product.getPrice());
+        existing.setStock(product.getStock());
         existing.setCategoryId(product.getCategoryId());
         existing.setDescription(product.getDescription());
         existing.setSubCategory(product.getSubCategory());

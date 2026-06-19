@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Created DELETE requests that admin can ONLY access and GET requests after deletion working. Bugs#13 - #16 closed. Phase 1: Categories done.">
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Bug #17: took a method out of the streams in the search() of ProductService class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ProductService.java" afterDir="false" />
     </list>
@@ -91,7 +91,7 @@
       <workItem from="1781809266635" duration="6456000" />
       <workItem from="1781820042111" duration="80000" />
       <workItem from="1781820150102" duration="36000" />
-      <workItem from="1781820255912" duration="6329000" />
+      <workItem from="1781820255912" duration="11106000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -165,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781825425491</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Bug #17: took a method out of the streams in the search() of ProductService class.">
+      <option name="closed" value="true" />
+      <created>1781828373089</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1781828373089</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +189,7 @@
     <MESSAGE value="Finished debugging GET request where the admin can populate the categories after adding and getting the new category by id . Bug#8 and Bug#9 closed" />
     <MESSAGE value="debugged PUT request where the admin can ONLY update the existing category. Bug#10, Bug#11, and Bug#12 closed" />
     <MESSAGE value="Created DELETE requests that admin can ONLY access and GET requests after deletion working. Bugs#13 - #16 closed. Phase 1: Categories done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created DELETE requests that admin can ONLY access and GET requests after deletion working. Bugs#13 - #16 closed. Phase 1: Categories done." />
+    <MESSAGE value="Bug #17: took a method out of the streams in the search() of ProductService class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug #17: took a method out of the streams in the search() of ProductService class." />
   </component>
 </project>
