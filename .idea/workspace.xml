@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="JS Header: logo image fixed">
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="JS product-service image bug: little image src file bug fix. Images rendering on the cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/ShoppingCartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/services/products-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/products-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +91,7 @@
       <workItem from="1781820042111" duration="80000" />
       <workItem from="1781820150102" duration="36000" />
       <workItem from="1781820255912" duration="11719000" />
-      <workItem from="1781880311274" duration="22740000" />
+      <workItem from="1781880311274" duration="23619000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -217,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781976780149</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="JS product-service image bug: little image src file bug fix. Images rendering on the cart">
+      <option name="closed" value="true" />
+      <created>1781981864918</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1781981864918</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +242,9 @@
     <MESSAGE value="feature (cart): implement cart retrieval and add-to-cart functionality&#10;&#10;- Retrieve cart items for authenticated users and admins&#10;- Include product descriptions in cart responses&#10;- Add products to shopping cart&#10;- Increment quantity when product already exists in cart" />
     <MESSAGE value="feature (cart): add endpoint to clear shopping cart &#10;&#10;- Deletes all items for the current user&#10;- Returns 200 OK on success&#10;- Returns an empty cart after deletion" />
     <MESSAGE value="JS Header: logo image fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="JS Header: logo image fixed" />
+    <MESSAGE value="JS product-service image bug: little image src file bug fix. Images rendering on the cart" />
+    <MESSAGE value="&#10;Feature (cart): update cart item quantity and fix product images &#10;&#10;- update product quantity in the database with PUT request&#10;- returns HTTP OK status with the updated cart &#10;- Fix product image paths so images render in the cart (js product-service)" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Feature (cart): update cart item quantity and fix product images &#10;&#10;- update product quantity in the database with PUT request&#10;- returns HTTP OK status with the updated cart &#10;- Fix product image paths so images render in the cart (js product-service)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
