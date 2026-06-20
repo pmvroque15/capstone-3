@@ -1,13 +1,12 @@
 package org.yearup.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.yearup.models.CartItem;
-import org.yearup.models.Product;
-import org.yearup.models.ShoppingCart;
-import org.yearup.models.ShoppingCartItem;
+import org.yearup.models.*;
 import org.yearup.repository.ShoppingCartRepository;
 
+import java.security.Principal;
 import java.util.List;
 
 @Service
@@ -16,12 +15,14 @@ public class ShoppingCartService
     // a shopping cart is built from cart rows plus a product lookup for each row
     private final ShoppingCartRepository shoppingCartRepository;
     private final ProductService productService;
+    private final UserService userService;
 
     @Autowired
-    public ShoppingCartService(ShoppingCartRepository shoppingCartRepository, ProductService productService)
+    public ShoppingCartService(ShoppingCartRepository shoppingCartRepository, ProductService productService, UserService userService)
     {
         this.shoppingCartRepository = shoppingCartRepository;
         this.productService = productService;
+        this.userService = userService;
     }
 
     public ShoppingCart getByUserId(int userId)
@@ -57,6 +58,15 @@ public class ShoppingCartService
         }
 
         shoppingCartRepository.save(cartItem);
+    }
+
+    @Transactional
+    public ShoppingCart clearItems(Principal principal) {
+        User user = userService.getByUserName(principal.getName());
+
+        shoppingCartRepository.deleteByUserId(user.getId());
+
+        return new ShoppingCart();
     }
 
     // add additional methods here
