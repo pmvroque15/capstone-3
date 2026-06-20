@@ -4,7 +4,6 @@ class ProductService {
 
     photos = [];
 
-
     filter = {
         cat: undefined,
         minPrice: undefined,
@@ -39,9 +38,13 @@ class ProductService {
     constructor() {
 
         //load list of photos into memory
+
         axios.get("./images/products/photos.json")
             .then(response => {
                 this.photos = response.data;
+
+
+                console.log("photos.json data:", this.photos);
             });
     }
 
