@@ -13,7 +13,9 @@ class UserService {
     {
         if(this.currentUser.token) {
             return {
+                headers: {
                     'Authorization': `Bearer ${this.currentUser.token}`
+                }
             };
         }
 

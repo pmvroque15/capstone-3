@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="JS product-service image bug: little image src file bug fix. Images rendering on the cart">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/ProfileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/services/products-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/products-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/services/profile-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/profile-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/services/user-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/user-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,7 +105,7 @@
       <workItem from="1781820042111" duration="80000" />
       <workItem from="1781820150102" duration="36000" />
       <workItem from="1781820255912" duration="11719000" />
-      <workItem from="1781880311274" duration="23619000" />
+      <workItem from="1781880311274" duration="30836000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -221,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781981864918</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="JS product-service image bug: little image src file bug fix. Images rendering on the cart">
+      <option name="closed" value="true" />
+      <created>1781982507358</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1781982507358</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,9 +264,9 @@
     <MESSAGE value="feature (cart): implement cart retrieval and add-to-cart functionality&#10;&#10;- Retrieve cart items for authenticated users and admins&#10;- Include product descriptions in cart responses&#10;- Add products to shopping cart&#10;- Increment quantity when product already exists in cart" />
     <MESSAGE value="feature (cart): add endpoint to clear shopping cart &#10;&#10;- Deletes all items for the current user&#10;- Returns 200 OK on success&#10;- Returns an empty cart after deletion" />
     <MESSAGE value="JS Header: logo image fixed" />
-    <MESSAGE value="JS product-service image bug: little image src file bug fix. Images rendering on the cart" />
     <MESSAGE value="&#10;Feature (cart): update cart item quantity and fix product images &#10;&#10;- update product quantity in the database with PUT request&#10;- returns HTTP OK status with the updated cart &#10;- Fix product image paths so images render in the cart (js product-service)" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;Feature (cart): update cart item quantity and fix product images &#10;&#10;- update product quantity in the database with PUT request&#10;- returns HTTP OK status with the updated cart &#10;- Fix product image paths so images render in the cart (js product-service)" />
+    <MESSAGE value="JS product-service image bug: little image src file bug fix. Images rendering on the cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS product-service image bug: little image src file bug fix. Images rendering on the cart" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

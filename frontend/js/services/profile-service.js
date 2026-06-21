@@ -6,7 +6,9 @@ class ProfileService
     {
         const url = `${config.baseUrl}/profile`;
 
-        axios.get(url)
+        axios.get(url,
+           userService.getHeaders()
+        )
              .then(response => {
                  templateBuilder.build("profile", response.data, "main")
              })
@@ -24,7 +26,7 @@ class ProfileService
 
         const url = `${config.baseUrl}/profile`;
 
-        axios.put(url, profile)
+        axios.put(url, profile, userService.getHeaders())
              .then(() => {
                  const data = {
                      message: "The profile has been updated."

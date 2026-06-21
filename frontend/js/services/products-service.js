@@ -42,9 +42,6 @@ class ProductService {
         axios.get("./images/products/photos.json")
             .then(response => {
                 this.photos = response.data;
-
-
-                console.log("photos.json data:", this.photos);
             });
     }
 
