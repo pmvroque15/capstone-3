@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="JS product-service image bug: little image src file bug fix. Images rendering on the cart">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Phase 4 feature (profile): add profile view and update functionality&#10;&#10;- add endpoint to logged-in user's profile&#10;- add endpoint to update the logged-in user's profile &#10;- update JS header  state for logged-out users, logo img src path fix">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/models/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/models/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/ProfileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/services/products-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/products-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/services/profile-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/profile-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/services/user-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/user-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,33 +55,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.ECommerceApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/patroque/pluralsight/capstone-3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.tools",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ECommerceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/patroque/pluralsight/capstone-3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ECommerceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -105,7 +103,8 @@
       <workItem from="1781820042111" duration="80000" />
       <workItem from="1781820150102" duration="36000" />
       <workItem from="1781820255912" duration="11719000" />
-      <workItem from="1781880311274" duration="30836000" />
+      <workItem from="1781880311274" duration="31002000" />
+      <workItem from="1782066332185" duration="8154000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -243,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781982507358</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Phase 4 feature (profile): add profile view and update functionality&#10;&#10;- add endpoint to logged-in user's profile&#10;- add endpoint to update the logged-in user's profile &#10;- update JS header  state for logged-out users, logo img src path fix">
+      <option name="closed" value="true" />
+      <created>1782016185788</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1782016185788</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +273,8 @@
     <MESSAGE value="JS Header: logo image fixed" />
     <MESSAGE value="&#10;Feature (cart): update cart item quantity and fix product images &#10;&#10;- update product quantity in the database with PUT request&#10;- returns HTTP OK status with the updated cart &#10;- Fix product image paths so images render in the cart (js product-service)" />
     <MESSAGE value="JS product-service image bug: little image src file bug fix. Images rendering on the cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="JS product-service image bug: little image src file bug fix. Images rendering on the cart" />
+    <MESSAGE value="Phase 4 feature (profile): add profile view and update functionality&#10;&#10;- add endpoint to logged-in user's profile&#10;- add endpoint to update the logged-in user's profile &#10;- update JS header  state for logged-out users, logo img src path fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Phase 4 feature (profile): add profile view and update functionality&#10;&#10;- add endpoint to logged-in user's profile&#10;- add endpoint to update the logged-in user's profile &#10;- update JS header  state for logged-out users, logo img src path fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
