@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Phase 4 feature (profile): add profile view and update functionality&#10;&#10;- add endpoint to logged-in user's profile&#10;- add endpoint to update the logged-in user's profile &#10;- update JS header  state for logged-out users, logo img src path fix">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/models/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/OrderService.java" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Phase 5: Added checkout feature (work in progress)&#10;&#10;- initalized order, OrderLineItem, and layers to communicate to the database.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/models/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/models/OrderLineItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/models/OrderLineItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +101,7 @@
       <workItem from="1781820150102" duration="36000" />
       <workItem from="1781820255912" duration="11719000" />
       <workItem from="1781880311274" duration="31002000" />
-      <workItem from="1782066332185" duration="8154000" />
+      <workItem from="1782066332185" duration="12236000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -250,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782016185788</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Phase 5: Added checkout feature (work in progress)&#10;&#10;- initalized order, OrderLineItem, and layers to communicate to the database.">
+      <option name="closed" value="true" />
+      <created>1782082613904</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1782082613904</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +279,8 @@
     <MESSAGE value="&#10;Feature (cart): update cart item quantity and fix product images &#10;&#10;- update product quantity in the database with PUT request&#10;- returns HTTP OK status with the updated cart &#10;- Fix product image paths so images render in the cart (js product-service)" />
     <MESSAGE value="JS product-service image bug: little image src file bug fix. Images rendering on the cart" />
     <MESSAGE value="Phase 4 feature (profile): add profile view and update functionality&#10;&#10;- add endpoint to logged-in user's profile&#10;- add endpoint to update the logged-in user's profile &#10;- update JS header  state for logged-out users, logo img src path fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phase 4 feature (profile): add profile view and update functionality&#10;&#10;- add endpoint to logged-in user's profile&#10;- add endpoint to update the logged-in user's profile &#10;- update JS header  state for logged-out users, logo img src path fix" />
+    <MESSAGE value="Phase 5: Added checkout feature (work in progress)&#10;&#10;- initalized order, OrderLineItem, and layers to communicate to the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Phase 5: Added checkout feature (work in progress)&#10;&#10;- initalized order, OrderLineItem, and layers to communicate to the database." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

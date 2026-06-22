@@ -39,4 +39,8 @@ public class Order {
     public BigDecimal getShippingAmount() {
         return shippingAmount;
     }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
 }
