@@ -44,3 +44,17 @@ This full-stack e-commerce application is built using Java, Spring boot, JavaScr
 
 --- 
 
+### Favorite code
+
+
+---
+
+### What would I improve on 
+
+---
+
+### Author
+
+---
+
+### Closing
