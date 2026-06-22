@@ -6,7 +6,8 @@
 
 - [Overview](#overview)
 - [Features](#features)
-
+- [Technology Stack](#technology-stack-)
+- []
 ---
 ### Overview
 
@@ -33,4 +34,13 @@ This full-stack e-commerce application is built using Java, Spring boot, JavaScr
 **ADD GIF OR PHOTO FOR EXAMPLE**
 
 ---
+
+### Technology Stack 
+
+- Backend: Java, Spring Boot 
+- Frontend: JavaScript
+- Database: MySQL
+- API Testing: Insomnia
+
+--- 
 

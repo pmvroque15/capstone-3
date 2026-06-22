@@ -93,7 +93,7 @@ public class ShoppingCartController
 
         ShoppingCart cart = shoppingCartService.clearItems(principal);
 
-        return  ResponseEntity.ok(cart);
+        return  ResponseEntity.status(HttpStatus.OK).body(cart);
     }
 
 }

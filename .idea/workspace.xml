@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Phase 5 feature(checkout): added more fields in the OrderLineItem class and still work in progress&#10;&#10;Initialized README file">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/readme-images/grocery-store-header.jpg" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="README&#10;&#10;- added header and new sub categories: Table of contents, Over view, and Features.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +107,7 @@
       <workItem from="1781820255912" duration="11719000" />
       <workItem from="1781880311274" duration="31002000" />
       <workItem from="1782066332185" duration="12236000" />
-      <workItem from="1782134673383" duration="3899000" />
+      <workItem from="1782134673383" duration="10524000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -277,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782134941481</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="README&#10;&#10;- added header and new sub categories: Table of contents, Over view, and Features.">
+      <option name="closed" value="true" />
+      <created>1782139929479</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1782139929479</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +311,8 @@
     <MESSAGE value="Phase 4 feature (profile): add profile view and update functionality&#10;&#10;- add endpoint to logged-in user's profile&#10;- add endpoint to update the logged-in user's profile &#10;- update JS header  state for logged-out users, logo img src path fix" />
     <MESSAGE value="Phase 5: Added checkout feature (work in progress)&#10;&#10;- initalized order, OrderLineItem, and layers to communicate to the database." />
     <MESSAGE value="Phase 5 feature(checkout): added more fields in the OrderLineItem class and still work in progress&#10;&#10;Initialized README file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phase 5 feature(checkout): added more fields in the OrderLineItem class and still work in progress&#10;&#10;Initialized README file" />
+    <MESSAGE value="README&#10;&#10;- added header and new sub categories: Table of contents, Over view, and Features." />
+    <option name="LAST_COMMIT_MESSAGE" value="README&#10;&#10;- added header and new sub categories: Table of contents, Over view, and Features." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
