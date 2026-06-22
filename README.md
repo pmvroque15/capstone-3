@@ -49,6 +49,10 @@ This full-stack e-commerce application is built using Java, Spring boot, JavaScr
 
 ---
 
+### Project Board
+
+---
+
 ### What would I improve on 
 
 ---
