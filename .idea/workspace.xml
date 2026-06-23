@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Removed comments and added TODOs">
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/readme-images/Java-Dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/readme-images/grocery-store-filters.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/banner.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
       <workItem from="1781880311274" duration="31002000" />
       <workItem from="1782066332185" duration="12236000" />
       <workItem from="1782134673383" duration="17657000" />
-      <workItem from="1782221577287" duration="4852000" />
+      <workItem from="1782221577287" duration="7269000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -331,18 +331,53 @@
       <option name="project" value="LOCAL" />
       <updated>1782191318053</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Changed label from &quot;minimum price&quot; to &quot;maximum price&quot;">
+      <option name="closed" value="true" />
+      <created>1782227263836</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1782227263836</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Fixed roles string parameters for more consistency.">
+      <option name="closed" value="true" />
+      <created>1782227376795</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1782227376795</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Cleaned features subcategory">
+      <option name="closed" value="true" />
+      <created>1782227402379</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1782227402379</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Deleted userService class">
+      <option name="closed" value="true" />
+      <created>1782227436135</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1782227436135</updated>
+    </task>
+    <task id="LOCAL-00032" summary="update">
+      <option name="closed" value="true" />
+      <created>1782227445390</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1782227445390</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished debugging GET Request of getting all categories.Bug#1 closed" />
-    <MESSAGE value="Finished debugging GET Request of getting a category by id. Bug#2 closed" />
-    <MESSAGE value="Finished debugging GET Request of getting a category by id and returns status code 404 if category id is null. Bug#3 closed" />
-    <MESSAGE value="Finished debugging GET Request of list of products by its category id. Bug#4 closed" />
-    <MESSAGE value="Finished debugging POST request where the admin can only create a category . Bug#5 closed" />
     <MESSAGE value="Finished debugging POST request where the admin can only create a category . Bug#6 and Bug#7 closed" />
     <MESSAGE value="Finished debugging GET request where the admin can populate the categories after adding and getting the new category by id . Bug#8 and Bug#9 closed" />
     <MESSAGE value="debugged PUT request where the admin can ONLY update the existing category. Bug#10, Bug#11, and Bug#12 closed" />
@@ -363,7 +398,12 @@
     <MESSAGE value="README&#10;&#10;- added Project Board sub category" />
     <MESSAGE value="Made changes with PUT and DELETE endpoints logic." />
     <MESSAGE value="Removed comments and added TODOs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed comments and added TODOs" />
+    <MESSAGE value="Changed label from &quot;minimum price&quot; to &quot;maximum price&quot;" />
+    <MESSAGE value="Fixed roles string parameters for more consistency." />
+    <MESSAGE value="Cleaned features subcategory" />
+    <MESSAGE value="Deleted userService class" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

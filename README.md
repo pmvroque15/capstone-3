@@ -26,14 +26,13 @@ This full-stack e-commerce application is built using Java, Spring boot, JavaScr
 
 **`*`** = Both authorized users can use the feature.
 
-# NOTE IMPORTANT !!!
-**ADD GIF OR PHOTO FOR EXAMPLE**
+![grocery-store-filters.gif](backend/src/main/resources/readme-images/grocery-store-filters.gif)
 
 ---
 
 ### Technology Stack 
 
-- Backend: Java, Spring Boot 
+- Backend: ![Java-Dark.svg](backend/src/main/resources/readme-images/Java-Dark.svg), Spring Boot 
 - Frontend: JavaScript
 - Database: MySQL
 - API Testing: Insomnia
