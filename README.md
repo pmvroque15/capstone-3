@@ -17,18 +17,14 @@ This full-stack e-commerce application is built using Java, Spring boot, JavaScr
 
 ### Features
 
-**User Features**
+| User                             | Administrator            |
+|----------------------------------|--------------------------|
+| View products by category *      | Add new categories       |
+| Filter products by price range * | Edit existing categories |
+| View profile details *           | Delete categories        |
+| Update profile details *         |                          |
 
-- View products by category 
-- Filter products by price range
-- View profile details
-- Update profile details 
-
-**Administrator Features**
-
-- Add new categories
-- Edit existing categories
-- Delete categories
+**`*`** = Both authorized users can use the feature.
 
 # NOTE IMPORTANT !!!
 **ADD GIF OR PHOTO FOR EXAMPLE**
