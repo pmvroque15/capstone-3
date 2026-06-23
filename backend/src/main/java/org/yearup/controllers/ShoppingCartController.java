@@ -63,9 +63,7 @@ public class ShoppingCartController
         User user = userService.getByUserName(userName);
         int userId = user.getId();
 
-        shoppingCartService.addProduct(userId, productId);
-
-        ShoppingCart updatedCart = shoppingCartService.getByUserId(userId);
+        ShoppingCart updatedCart =  shoppingCartService.addProduct(userId, productId);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(updatedCart);
     }
@@ -78,8 +76,9 @@ public class ShoppingCartController
     @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
     public ResponseEntity<ShoppingCart> updateItem(Principal principal, @PathVariable int productId, @RequestBody ShoppingCartItem item) {
         String userName = principal.getName();
-
-        ShoppingCart cart = shoppingCartService.updateItem(userName, productId, item.getQuantity());
+        User user = userService.getByUserName(userName);
+        int userId = user.getId();
+        ShoppingCart cart = shoppingCartService.updateItem(userId, productId, item);
 
         return ResponseEntity.ok(cart);
     }
@@ -90,8 +89,11 @@ public class ShoppingCartController
     @DeleteMapping
     @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
     public ResponseEntity<ShoppingCart> deleteProductFromCart(Principal principal) {
-
-        ShoppingCart cart = shoppingCartService.clearItems(principal);
+        String userName = principal.getName();
+        User user = userService.getByUserName(userName);
+        int userId = user.getId();
+        shoppingCartService.clearItems(userId);
+        ShoppingCart cart = shoppingCartService.getByUserId(userId);
 
         return  ResponseEntity.status(HttpStatus.OK).body(cart);
     }

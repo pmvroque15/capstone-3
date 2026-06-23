@@ -46,50 +46,36 @@ public class ShoppingCartService
         return shoppingCart;
     }
 
-    public void addProduct(int userId, int id) {
-        CartItem cartItem = shoppingCartRepository.findByUserIdAndProductId(userId, id);
+    public ShoppingCart addProduct(int userId, int id) {
+       CartItem product = new CartItem();
 
-        //if product is already in cart
-        if (cartItem != null) {
-            cartItem.setQuantity(cartItem.getQuantity() + 1);
-        } else {
-            cartItem = new CartItem();
-            cartItem.setUserId(userId);
-            cartItem.setProductId(id);
-            cartItem.setQuantity(1);
-        }
+       product.setUserId(userId);
+       product.setProductId(id);
 
-        shoppingCartRepository.save(cartItem);
-    }
+       CartItem userAndProduct = shoppingCartRepository.findByUserIdAndProductId(userId, id);
 
-    @Transactional
-    public ShoppingCart clearItems(Principal principal) {
-        User user = userService.getByUserName(principal.getName());
-
-        shoppingCartRepository.deleteByUserId(user.getId());
-
-        return new ShoppingCart();
-    }
-
-    @Transactional
-    public ShoppingCart updateItem(String name, int productId, int quantity) {
-        User user = userService.getByUserName(name);
-
-       ShoppingCart cart = getByUserId(user.getId());
-
-       ShoppingCartItem item = cart.get(productId);
-
-       if(item == null) {
-           throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Product not found");
+       if (userAndProduct == null) {
+           shoppingCartRepository.save(product);
+       } else {
+           int quantity = userAndProduct.getQuantity();
+           userAndProduct.setQuantity(quantity + 1);
+           shoppingCartRepository.save(userAndProduct);
        }
 
-       item.setQuantity(quantity);
-
-       shoppingCartRepository.updateQuantity(user.getId(), productId, quantity);
-
-       return getByUserId(user.getId());
+       return getByUserId(userId);
     }
 
-    // add additional methods here
+    @Transactional
+    public void clearItems(int userId) {
+        shoppingCartRepository.deleteByUserId(userId);
+    }
 
+
+    public ShoppingCart updateItem(int userId, int productId, ShoppingCartItem item) {
+        CartItem cartItem = shoppingCartRepository.findByUserIdAndProductId(userId, productId);
+        cartItem.setQuantity(item.getQuantity());
+        shoppingCartRepository.save(cartItem);
+
+        return getByUserId(userId);
+    }
 }
