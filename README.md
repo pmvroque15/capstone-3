@@ -1,5 +1,4 @@
-
-<img src="backend/src/main/resources/readme-images/grocery-store-header.jpg" sytle="max-width: 100%; height: auto;">
+![grocery-store-header.jpg](backend/src/main/resources/readme-images/grocery-store-header.jpg)
 
 # Pat's Online Grocery Store  🛒
 
@@ -19,16 +18,17 @@ This full-stack e-commerce application is built using Java, Spring boot, JavaScr
 
 ### Features
 
-| User                             | Administrator            |
-|----------------------------------|--------------------------|
-| View products by category *      | Add new categories       |
-| Filter products by price range * | Edit existing categories |
-| View profile details *           | Delete categories        |
-| Update profile details *         |                          |
+![grocery-store-filters.gif](backend/src/main/resources/readme-images/grocery-store-filters.gif)
+
+|               User               |       Administrator        |
+|:--------------------------------:|:--------------------------:|
+|   View products by category *    |     Add new categories     |
+| Filter products by price range * |  Edit existing categories  |
+|      View profile details *      |     Delete categories      |
+|     Update profile details *     |                            |
 
 **`*`** = Both authorized users can use the feature.
 
-![grocery-store-filters.gif](backend/src/main/resources/readme-images/grocery-store-filters.gif)
 ---
 
 ### Technology Stack 
@@ -40,6 +40,7 @@ This full-stack e-commerce application is built using Java, Spring boot, JavaScr
 --- 
 
 ### Favorite code
+My favorite code 
 
 
 ---
