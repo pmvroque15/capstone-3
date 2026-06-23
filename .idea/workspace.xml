@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="README&#10;&#10;- added Project Board sub category">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Made changes with PUT and DELETE endpoints logic.">
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/ShoppingCartRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +107,7 @@
       <workItem from="1781820255912" duration="11719000" />
       <workItem from="1781880311274" duration="31002000" />
       <workItem from="1782066332185" duration="12236000" />
-      <workItem from="1782134673383" duration="17253000" />
+      <workItem from="1782134673383" duration="17614000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -309,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782154203028</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Made changes with PUT and DELETE endpoints logic.">
+      <option name="closed" value="true" />
+      <created>1782190995372</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1782190995372</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +347,8 @@
     <MESSAGE value="README&#10;&#10;- added technology stack subcategory and linked it in the tables of contents" />
     <MESSAGE value="README&#10;&#10;- added more subcategories: Favorite Code, What would i improve on, Author, and Closing" />
     <MESSAGE value="README&#10;&#10;- added Project Board sub category" />
-    <option name="LAST_COMMIT_MESSAGE" value="README&#10;&#10;- added Project Board sub category" />
+    <MESSAGE value="Made changes with PUT and DELETE endpoints logic." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made changes with PUT and DELETE endpoints logic." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

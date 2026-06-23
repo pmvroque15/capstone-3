@@ -18,14 +18,4 @@ public interface ShoppingCartRepository extends JpaRepository<CartItem, Integer>
 
     void deleteByUserId(int userId);
 
-    @Modifying
-    @Query("""
-        UPDATE CartItem c
-        SET c.quantity = :quantity
-        WHERE c.userId = :userId
-        AND c.productId = :productId
-""")
-    void updateQuantity(@Param("userId") int userId,
-                        @Param("productId") int productId,
-                        @Param("quantity") int quantity);
 }

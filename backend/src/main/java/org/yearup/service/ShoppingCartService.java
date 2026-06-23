@@ -14,7 +14,6 @@ import java.util.List;
 @Service
 public class ShoppingCartService
 {
-    // a shopping cart is built from cart rows plus a product lookup for each row
     private final ShoppingCartRepository shoppingCartRepository;
     private final ProductService productService;
     private final UserService userService;
@@ -69,7 +68,6 @@ public class ShoppingCartService
     public void clearItems(int userId) {
         shoppingCartRepository.deleteByUserId(userId);
     }
-
 
     public ShoppingCart updateItem(int userId, int productId, ShoppingCartItem item) {
         CartItem cartItem = shoppingCartRepository.findByUserIdAndProductId(userId, productId);
