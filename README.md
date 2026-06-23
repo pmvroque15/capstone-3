@@ -1,4 +1,6 @@
-![grocery-store-header.jpg](backend/src/main/resources/readme-images/grocery-store-header.jpg)
+
+<img src="backend/src/main/resources/readme-images/grocery-store-header.jpg" sytle="max-width: 100%; height: auto;">
+
 # Pat's Online Grocery Store  🛒
 
 ---
@@ -27,16 +29,14 @@ This full-stack e-commerce application is built using Java, Spring boot, JavaScr
 **`*`** = Both authorized users can use the feature.
 
 ![grocery-store-filters.gif](backend/src/main/resources/readme-images/grocery-store-filters.gif)
-
 ---
 
 ### Technology Stack 
 
-- Backend: ![Java-Dark.svg](backend/src/main/resources/readme-images/Java-Dark.svg), Spring Boot 
-- Frontend: JavaScript
-- Database: MySQL
-- API Testing: Insomnia
-
+- Backend: ![Java-SpringBoot](https://www.readmecodegen.com/api/social-icon?name=Java%2CSpringBoot&size=38&link=)
+- Frontend: ![Javascript](https://www.readmecodegen.com/api/social-icon?name=Javascript&size=38&link=)
+- Database: ![mySQL](https://www.readmecodegen.com/api/social-icon?name=mySQL&size=38&link=)
+- API Testing: ![insomnia](https://www.readmecodegen.com/api/social-icon?name=insomnia&size=38&link=)
 --- 
 
 ### Favorite code
