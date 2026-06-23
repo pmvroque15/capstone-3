@@ -16,14 +16,12 @@ public class ShoppingCartService
 {
     private final ShoppingCartRepository shoppingCartRepository;
     private final ProductService productService;
-    private final UserService userService;
 
     @Autowired
     public ShoppingCartService(ShoppingCartRepository shoppingCartRepository, ProductService productService, UserService userService)
     {
         this.shoppingCartRepository = shoppingCartRepository;
         this.productService = productService;
-        this.userService = userService;
     }
 
     public ShoppingCart getByUserId(int userId)
