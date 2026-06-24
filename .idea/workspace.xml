@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Added project board contents and uploaded more images">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/readme-images/grocery-store-header.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/readme-images/thebatman-thinking.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Added content in What would I Improve on and uploaded more images">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +109,7 @@
       <workItem from="1781880311274" duration="31002000" />
       <workItem from="1782066332185" duration="12236000" />
       <workItem from="1782134673383" duration="17657000" />
-      <workItem from="1782221577287" duration="38639000" />
+      <workItem from="1782221577287" duration="39023000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -442,14 +439,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782328900442</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Added content in What would I Improve on and uploaded more images">
+      <option name="closed" value="true" />
+      <created>1782330227792</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1782330227792</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feature (cart): add endpoint to clear shopping cart &#10;&#10;- Deletes all items for the current user&#10;- Returns 200 OK on success&#10;- Returns an empty cart after deletion" />
     <MESSAGE value="JS Header: logo image fixed" />
     <MESSAGE value="&#10;Feature (cart): update cart item quantity and fix product images &#10;&#10;- update product quantity in the database with PUT request&#10;- returns HTTP OK status with the updated cart &#10;- Fix product image paths so images render in the cart (js product-service)" />
     <MESSAGE value="JS product-service image bug: little image src file bug fix. Images rendering on the cart" />
@@ -474,7 +478,8 @@
     <MESSAGE value="uncommented one line logic on updateItem()" />
     <MESSAGE value="Added Favorite Code contents." />
     <MESSAGE value="Added project board contents and uploaded more images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added project board contents and uploaded more images" />
+    <MESSAGE value="Added content in What would I Improve on and uploaded more images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added content in What would I Improve on and uploaded more images" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -9,6 +9,8 @@
 - [Technology Stack](#technology-stack-)
 - [Project Board](#project-board)
 - [What Would I Improve On](#what-would-i-improve-on-)
+- [Author](#author)
+- [Resources](#resources)
 ---
 ### Overview
 
@@ -80,9 +82,9 @@ And here's a little snippet of what my ticket and the user story looked like:
 Hmm... 
 ![thebatman-thinking.gif](backend/src/main/resources/readme-images/thebatman-thinking.gif)
 
-This project I had fun really, understanding behind the scenes of a Web Application.
-Giving me an opportunity to understand on reading and understanding code line by line and understanding the architecture of Spring Boot 
-REST applications. There's nothing that I want to change in the back end, but I definitely want to improve the UI of this application to make it sleeker and user friendly.
+I really enjoyed working on this project because it gave me a deeper understanding of what happens behind the scenes in a web application. It provided an opportunity to read and analyze code line by line, helping me better understand the architecture of Spring Boot REST applications and how the different layers work together.
+
+From a backend perspective, I am satisfied with the application's functionality and architecture. However, if I were to continue improving the project, I would focus on enhancing the user interface to create a more modern, polished, and user-friendly experience.
 
 ---
 
@@ -93,4 +95,9 @@ Built with lots of brain cells and mooskels by a developer who takes both their 
 
 ---
 
-### Closing
+### Resources
+
+Sehjal, H. (n.d.). User story template [GitHub Gist]. GitHub. https://gist.github.com/hamitsehjal/9871106a8cffaa16f0b2a70e20abe29b
+
+Spring Framework Documentation – Transaction Management in the TestContext Framework
+Spring Team. (n.d.). Transaction management. In Spring Framework Reference Documentation. Retrieved June 24, 2026, from https://docs.spring.io/spring-framework/reference/testing/testcontext-framework/tx.html#testcontext-tx-attribute-support
