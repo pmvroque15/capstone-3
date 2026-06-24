@@ -1,5 +1,4 @@
-![grocery-store-header.jpg](backend/src/main/resources/readme-images/grocery-store-header.jpg)
-
+![grocery-store-header.gif](backend/src/main/resources/readme-images/grocery-store-header.gif)
 # Pat's Online Grocery Store  🛒
 
 ---
@@ -9,6 +8,7 @@
 - [Features](#features)
 - [Technology Stack](#technology-stack-)
 - [Project Board](#project-board)
+- [What Would I Improve On](#what-would-i-improve-on-)
 ---
 ### Overview
 
@@ -77,12 +77,19 @@ And here's a little snippet of what my ticket and the user story looked like:
 ---
 
 ### What would I improve on 
+Hmm... 
+![thebatman-thinking.gif](backend/src/main/resources/readme-images/thebatman-thinking.gif)
 
-
+This project I had fun really, understanding behind the scenes of a Web Application.
+Giving me an opportunity to understand on reading and understanding code line by line and understanding the architecture of Spring Boot 
+REST applications. There's nothing that I want to change in the back end, but I definitely want to improve the UI of this application to make it sleeker and user friendly.
 
 ---
 
 ### Author
+Hi, I’m Pat Roque, an aspiring software developer passionate about learning and growing in the tech space. With a background in customer experience and leadership, I bring strong communication and problem-solving skills into my development journey. I’m currently focused on Java, building applications and expanding my knowledge of programming fundamentals.
+
+Built with lots of brain cells and mooskels by a developer who takes both their gains and their grocery shopping skills seriously (ᕗ ͠° ਊ ͠° )ᕗ ᕙ(⇀‸↼‶)ᕗ
 
 ---
 

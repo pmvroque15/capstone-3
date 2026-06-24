@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Added Favorite Code contents.">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/readme-images/project-board-example.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/readme-images/project-board.gif" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Added project board contents and uploaded more images">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/readme-images/grocery-store-header.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/readme-images/thebatman-thinking.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/readme-images/grocery-store-filters.gif" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/readme-images/grocery-store-filters.gif" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,7 @@
       <workItem from="1781880311274" duration="31002000" />
       <workItem from="1782066332185" duration="12236000" />
       <workItem from="1782134673383" duration="17657000" />
-      <workItem from="1782221577287" duration="37320000" />
+      <workItem from="1782221577287" duration="38639000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -435,14 +434,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782320677406</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Added project board contents and uploaded more images">
+      <option name="closed" value="true" />
+      <created>1782328900442</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1782328900442</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feature (cart): implement cart retrieval and add-to-cart functionality&#10;&#10;- Retrieve cart items for authenticated users and admins&#10;- Include product descriptions in cart responses&#10;- Add products to shopping cart&#10;- Increment quantity when product already exists in cart" />
     <MESSAGE value="feature (cart): add endpoint to clear shopping cart &#10;&#10;- Deletes all items for the current user&#10;- Returns 200 OK on success&#10;- Returns an empty cart after deletion" />
     <MESSAGE value="JS Header: logo image fixed" />
     <MESSAGE value="&#10;Feature (cart): update cart item quantity and fix product images &#10;&#10;- update product quantity in the database with PUT request&#10;- returns HTTP OK status with the updated cart &#10;- Fix product image paths so images render in the cart (js product-service)" />
@@ -467,7 +473,8 @@
     <MESSAGE value="moved @PreAuthorized feature on the controller class to keep from DRY" />
     <MESSAGE value="uncommented one line logic on updateItem()" />
     <MESSAGE value="Added Favorite Code contents." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Favorite Code contents." />
+    <MESSAGE value="Added project board contents and uploaded more images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added project board contents and uploaded more images" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
