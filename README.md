@@ -8,7 +8,7 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Technology Stack](#technology-stack-)
-- []
+- [Project Board](#project-board)
 ---
 ### Overview
 
@@ -67,9 +67,18 @@ and I think it was a great way to keep from dry and keeping the Controller doing
 
 ### Project Board
 
+Another thing I am proud also was I made a project board to experience how this feature works.
+![project-board.gif](backend/src/main/resources/readme-images/project-board.gif)
+
+And here's a little snippet of what my ticket and the user story looked like:
+
+![project-board-example.png](backend/src/main/resources/readme-images/project-board-example.png)
+
 ---
 
 ### What would I improve on 
+
+
 
 ---
 
