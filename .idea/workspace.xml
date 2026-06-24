@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Updated UI, made the UI sleeker and added quantity feature">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" afterDir="false" />
-    </list>
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="moved @PreAuthorized feature on the controller class to keep from DRY" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +107,7 @@
       <workItem from="1781880311274" duration="31002000" />
       <workItem from="1782066332185" duration="12236000" />
       <workItem from="1782134673383" duration="17657000" />
-      <workItem from="1782221577287" duration="28506000" />
+      <workItem from="1782221577287" duration="29119000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -409,14 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782319317927</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="moved @PreAuthorized feature on the controller class to keep from DRY">
+      <option name="closed" value="true" />
+      <created>1782319400274</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1782319400274</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created DELETE requests that admin can ONLY access and GET requests after deletion working. Bugs#13 - #16 closed. Phase 1: Categories done." />
     <MESSAGE value="Bug #17: took a method out of the streams in the search() of ProductService class." />
     <MESSAGE value="Phase 2: All GET requests are working. Added missing logic in updating a product." />
     <MESSAGE value="feature (cart): implement cart retrieval and add-to-cart functionality&#10;&#10;- Retrieve cart items for authenticated users and admins&#10;- Include product descriptions in cart responses&#10;- Add products to shopping cart&#10;- Increment quantity when product already exists in cart" />
@@ -441,7 +444,8 @@
     <MESSAGE value="updated banner" />
     <MESSAGE value="Refactored controller and service layer; made a helper method to get the user's ID. Preventing from DRY principle and keep the responsibilities between the two layers clear." />
     <MESSAGE value="Updated UI, made the UI sleeker and added quantity feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated UI, made the UI sleeker and added quantity feature" />
+    <MESSAGE value="moved @PreAuthorized feature on the controller class to keep from DRY" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved @PreAuthorized feature on the controller class to keep from DRY" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
