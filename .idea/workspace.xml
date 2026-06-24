@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="updated banner">
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Updated UI, made the UI sleeker and added quantity feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/ShoppingCartRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +111,7 @@
       <workItem from="1781880311274" duration="31002000" />
       <workItem from="1782066332185" duration="12236000" />
       <workItem from="1782134673383" duration="17657000" />
-      <workItem from="1782221577287" duration="17738000" />
+      <workItem from="1782221577287" duration="28506000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -395,15 +393,29 @@
       <option name="project" value="LOCAL" />
       <updated>1782230181473</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Refactored controller and service layer; made a helper method to get the user's ID. Preventing from DRY principle and keep the responsibilities between the two layers clear.">
+      <option name="closed" value="true" />
+      <created>1782242113726</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1782242113726</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Updated UI, made the UI sleeker and added quantity feature">
+      <option name="closed" value="true" />
+      <created>1782319317927</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1782319317927</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished debugging GET request where the admin can populate the categories after adding and getting the new category by id . Bug#8 and Bug#9 closed" />
-    <MESSAGE value="debugged PUT request where the admin can ONLY update the existing category. Bug#10, Bug#11, and Bug#12 closed" />
     <MESSAGE value="Created DELETE requests that admin can ONLY access and GET requests after deletion working. Bugs#13 - #16 closed. Phase 1: Categories done." />
     <MESSAGE value="Bug #17: took a method out of the streams in the search() of ProductService class." />
     <MESSAGE value="Phase 2: All GET requests are working. Added missing logic in updating a product." />
@@ -427,7 +439,9 @@
     <MESSAGE value="Deleted userService class" />
     <MESSAGE value="update" />
     <MESSAGE value="updated banner" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated banner" />
+    <MESSAGE value="Refactored controller and service layer; made a helper method to get the user's ID. Preventing from DRY principle and keep the responsibilities between the two layers clear." />
+    <MESSAGE value="Updated UI, made the UI sleeker and added quantity feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UI, made the UI sleeker and added quantity feature" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

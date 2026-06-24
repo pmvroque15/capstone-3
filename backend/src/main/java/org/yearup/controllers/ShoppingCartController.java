@@ -14,25 +14,24 @@ import org.yearup.service.UserService;
 import java.security.Principal;
 
 
-//TODO clean the code for accessing principal's userId -> add to service class
 //TODO add comments on each endpoint
 @RestController
 @RequestMapping("/cart")
 @CrossOrigin(origins = "*")
+@PreAuthorize("hasAnyRole('USER', 'ADMIN')")
 public class ShoppingCartController
 {
 
     private ShoppingCartService shoppingCartService;
-    private UserService userService;
+
 
     @Autowired
-    public ShoppingCartController(ShoppingCartService shoppingCartService, UserService userService) {
+    public ShoppingCartController(ShoppingCartService shoppingCartService) {
         this.shoppingCartService = shoppingCartService;
-        this.userService = userService;
     }
 
     @GetMapping
-    @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
+
     public ResponseEntity<ShoppingCart> getCart(Principal principal) {
         if (principal == null) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
@@ -44,10 +43,7 @@ public class ShoppingCartController
     }
 
     @PostMapping("/products/{productId}")
-    @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
     public ResponseEntity<ShoppingCart> addProductToCart(@PathVariable int productId, Principal principal) {
-
-
 
         ShoppingCart updatedCart =  shoppingCartService.addProduct(principal, productId);
 
@@ -55,16 +51,14 @@ public class ShoppingCartController
     }
 
     @PutMapping("/products/{productId}")
-    @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
     public ResponseEntity<ShoppingCart> updateItem(Principal principal, @PathVariable int productId, @RequestBody ShoppingCartItem item) {
-        
+
         ShoppingCart cart = shoppingCartService.updateItem(principal, productId, item);
 
         return ResponseEntity.ok(cart);
     }
 
     @DeleteMapping
-    @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
     public ResponseEntity<ShoppingCart> deleteProductFromCart(Principal principal) {
         int userId = shoppingCartService.getUserId(principal);
         shoppingCartService.clearItems(userId);

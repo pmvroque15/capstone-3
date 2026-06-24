@@ -83,7 +83,7 @@ public class ShoppingCartService
         int userId = getUserId(principal);
         CartItem cartItem = shoppingCartRepository.findByUserIdAndProductId(userId, productId);
         cartItem.setQuantity(item.getQuantity());
-        shoppingCartRepository.save(cartItem);
+//        shoppingCartRepository.save(cartItem);
 
         return getCart(principal);
     }
