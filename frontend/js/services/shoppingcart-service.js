@@ -12,7 +12,7 @@ class ShoppingCartService {
         const url = `${config.baseUrl}/cart/products/${productId}`;
         // const headers = userService.getHeaders();
 
-        axios.post(url, {})// ,{headers})
+        return axios.post(url, {})// ,{headers})
             .then(response => {
                 this.setCart(response.data)
 
@@ -27,6 +27,55 @@ class ShoppingCartService {
 
                 templateBuilder.append("error", data, "errors")
             })
+    }
+
+    getProductQuantity(productId)
+    {
+        const quantityControl = document.getElementById(`quantity-${productId}`);
+        const quantity = Number(quantityControl?.value);
+
+        if (!Number.isInteger(quantity) || quantity < 1) {
+            return 1;
+        }
+
+        return Math.min(quantity, 99);
+    }
+
+    setProductQuantity(productId, quantity)
+    {
+        const quantityControl = document.getElementById(`quantity-${productId}`);
+
+        if (!quantityControl) {
+            return;
+        }
+
+        quantityControl.value = Math.min(Math.max(quantity, 1), 99);
+    }
+
+    increaseProductQuantity(productId)
+    {
+        const quantity = this.getProductQuantity(productId);
+        this.setProductQuantity(productId, quantity + 1);
+    }
+
+    decreaseProductQuantity(productId)
+    {
+        const quantity = this.getProductQuantity(productId);
+        this.setProductQuantity(productId, quantity - 1);
+    }
+
+    addQuantityToCart(productId)
+    {
+        const quantity = this.getProductQuantity(productId);
+        this.setProductQuantity(productId, quantity);
+
+        let request = Promise.resolve();
+
+        for (let count = 0; count < quantity; count++) {
+            request = request.then(() => this.addToCart(productId));
+        }
+
+        request.then(() => this.setProductQuantity(productId, 1));
     }
 
     setCart(data)
@@ -176,7 +225,7 @@ class ShoppingCartService {
     updateCartDisplay()
     {
         try {
-            const itemCount = this.cart.items.length;
+            const itemCount = this.cart.items.reduce((total, item) => total + (Number(item.quantity) || 0), 0);
             const cartControl = document.getElementById("cart-items")
 
             cartControl.innerText = itemCount;

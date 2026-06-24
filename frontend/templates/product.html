@@ -13,8 +13,27 @@
         </div>
 
     </div>
-    <div class="add-button">
-        <button class="btn btn-success" onclick="cartService.addToCart({{productId}})">Add to Cart</button>
+    <div class="purchase-controls">
+        <div class="quantity-control" aria-label="Quantity">
+            <button type="button" onclick="cartService.decreaseProductQuantity({{productId}})" aria-label="Decrease quantity">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+            <input
+                type="number"
+                id="quantity-{{productId}}"
+                min="1"
+                max="99"
+                value="1"
+                aria-label="Quantity for {{name}}"
+            >
+            <button type="button" onclick="cartService.increaseProductQuantity({{productId}})" aria-label="Increase quantity">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+        <button class="btn btn-success" onclick="cartService.addQuantityToCart({{productId}})">
+            <i class="fa-solid fa-cart-plus"></i>
+            Add to Cart
+        </button>
     </div>
 </div>
 {{/products}}
