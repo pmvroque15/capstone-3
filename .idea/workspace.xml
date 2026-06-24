@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Added content in What would I Improve on and uploaded more images">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Edited ReadMe" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +107,7 @@
       <workItem from="1781880311274" duration="31002000" />
       <workItem from="1782066332185" duration="12236000" />
       <workItem from="1782134673383" duration="17657000" />
-      <workItem from="1782221577287" duration="39023000" />
+      <workItem from="1782221577287" duration="39140000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -447,14 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782330227792</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Edited ReadMe">
+      <option name="closed" value="true" />
+      <created>1782330697394</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1782330697394</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JS Header: logo image fixed" />
     <MESSAGE value="&#10;Feature (cart): update cart item quantity and fix product images &#10;&#10;- update product quantity in the database with PUT request&#10;- returns HTTP OK status with the updated cart &#10;- Fix product image paths so images render in the cart (js product-service)" />
     <MESSAGE value="JS product-service image bug: little image src file bug fix. Images rendering on the cart" />
     <MESSAGE value="Phase 4 feature (profile): add profile view and update functionality&#10;&#10;- add endpoint to logged-in user's profile&#10;- add endpoint to update the logged-in user's profile &#10;- update JS header  state for logged-out users, logo img src path fix" />
@@ -479,7 +484,8 @@
     <MESSAGE value="Added Favorite Code contents." />
     <MESSAGE value="Added project board contents and uploaded more images" />
     <MESSAGE value="Added content in What would I Improve on and uploaded more images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added content in What would I Improve on and uploaded more images" />
+    <MESSAGE value="Edited ReadMe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited ReadMe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

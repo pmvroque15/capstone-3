@@ -14,7 +14,7 @@
 ---
 ### Overview
 
-This full-stack e-commerce application is built using Java, Spring boot, JavaScript, and MySQL. Api endpoints are developed and tested using Insomnia, while mySQL serves as the application's relational database.
+This full-stack e-commerce application is built using Java, Spring boot, JavaScript, and MySQL. API endpoints are developed and tested using Insomnia, while mySQL serves as the application's relational database.
 
 ---
 
@@ -43,9 +43,9 @@ This full-stack e-commerce application is built using Java, Spring boot, JavaScr
 
 ### Favorite code
 
-In the project, I noticed that I was typing the same line of codes when accessing the usersId by passing in Principle data type.
+During development, I noticed that I was repeatedly writing the same code whenever I needed to access the logged-in user's ID. In the ShoppingCartController, each endpoint required a Principal object to identify the authenticated user, retrieve the username, look up the corresponding user record, and obtain the user's ID.
 
-In the ShoppingCartController we have to access the logged-in user by passing in a Principle object and get its user's ID: 
+Because this logic was duplicated across multiple methods, I refactored it into the service layer by creating a helper method that extracts the user ID from the Principal. This reduced code duplication, improved readability, and made the controller's responsibility more focused on handling HTTP requests while delegating business logic to the service layer. 
 
 ```java
  public ResponseEntity<ShoppingCart> getCart(Principal principal) 
