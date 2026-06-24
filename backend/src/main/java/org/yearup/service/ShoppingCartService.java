@@ -38,9 +38,7 @@ public class ShoppingCartService
         // load the user's cart rows, look up each product, and build the ShoppingCart
         ShoppingCart shoppingCart = new ShoppingCart();
 
-        int userId = getUserId(principal);
-
-        List<CartItem> cartItems = shoppingCartRepository.findByUserId(userId);
+        List<CartItem> cartItems = shoppingCartRepository.findByUserId(getUserId(principal));
 
         for (CartItem cartItem: cartItems) {
             Product product = productService.getById(cartItem.getProductId());
@@ -55,13 +53,12 @@ public class ShoppingCartService
     }
 
     public ShoppingCart addProduct(Principal principal, int productId) {
-        int userId = getUserId(principal);
         CartItem product = new CartItem();
 
-       product.setUserId(userId);
+       product.setUserId(getUserId(principal));
        product.setProductId(productId);
 
-       CartItem userAndProduct = shoppingCartRepository.findByUserIdAndProductId(userId, productId);
+       CartItem userAndProduct = shoppingCartRepository.findByUserIdAndProductId(getUserId(principal), productId);
 
        if (userAndProduct == null) {
            shoppingCartRepository.save(product);

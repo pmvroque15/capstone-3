@@ -40,8 +40,28 @@ This full-stack e-commerce application is built using Java, Spring boot, JavaScr
 --- 
 
 ### Favorite code
-My favorite code 
 
+In the project, I noticed that I was typing the same line of codes when accessing the usersId by passing in Principle data type.
+
+In the ShoppingCartController we have to access the logged-in user by passing in a Principle object and get its user's ID: 
+
+```java
+ public ResponseEntity<ShoppingCart> getCart(Principal principal) 
+```
+
+I thought that it was redundant, so instead doing it in the Controller, I passed the principal to the ShoppingCartService class to get the ID:
+
+```java
+    public int getUserId(Principal principal) {
+
+        String userName = principal.getName();
+        User user = userService.getByUserName(userName);
+
+        return user.getId();
+    }
+```
+
+and I think it was a great way to keep from dry and keeping the Controller doing some business logic when the Service layer does the business logic.
 
 ---
 
