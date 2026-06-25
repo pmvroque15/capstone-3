@@ -15,15 +15,36 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int orderId;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    @Column(name = "user_id")
+    private int userId;
 
     @Column(name = "shipping_amount")
-    private BigDecimal shippingAmount;
+    private double shippingAmount;
 
     @Column(name = "date")
     private LocalDateTime date;
+
+    @Column(name = "address")
+    private String address;
+
+    @Column(name = "city")
+    private String city;
+
+    @Column(name = "state")
+    private String state;
+
+    @Column(name = "zip")
+    private String zip;
+
+    public Order(int userId, double shippingAmount, LocalDateTime date, String address, String city, String state, String zip) {
+        this.userId = userId;
+        this.shippingAmount = shippingAmount;
+        this.date = date;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+    }
 
     public Order() {
     }
@@ -32,15 +53,63 @@ public class Order {
         return orderId;
     }
 
-    public User getUser() {
-        return user;
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
     }
 
-    public BigDecimal getShippingAmount() {
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public double getShippingAmount() {
         return shippingAmount;
+    }
+
+    public void setShippingAmount(double shippingAmount) {
+        this.shippingAmount = shippingAmount;
     }
 
     public LocalDateTime getDate() {
         return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
+    public void setZip(String zip) {
+        this.zip = zip;
     }
 }
