@@ -31,7 +31,6 @@ public class ShoppingCartController
     }
 
     @GetMapping
-
     public ResponseEntity<ShoppingCart> getCart(Principal principal) {
         if (principal == null) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
