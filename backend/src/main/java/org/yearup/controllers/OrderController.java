@@ -35,7 +35,7 @@ public class OrderController {
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
     public ResponseEntity<Order> createOrder(Principal principal) {
 
-       Order order = orderService.checkout(principal.getName());
+        Order order = orderService.checkout(principal.getName());
 
         return ResponseEntity.status(HttpStatus.CREATED).body(order);
     }
