@@ -7,19 +7,16 @@ import org.yearup.models.Profile;
 import org.yearup.repository.ProfileRepository;
 
 @Service
-public class ProfileService
-{
+public class ProfileService {
 
     private final ProfileRepository profileRepository;
 
     @Autowired
-    public ProfileService(ProfileRepository profileRepository)
-    {
+    public ProfileService(ProfileRepository profileRepository) {
         this.profileRepository = profileRepository;
     }
 
-    public Profile create(Profile profile)
-    {
+    public Profile create(Profile profile) {
         return profileRepository.save(profile);
     }
 

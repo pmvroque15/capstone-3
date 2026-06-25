@@ -29,7 +29,7 @@ public class OrderService {
         this.orderLineItemsRepository = orderLineItemsRepository;
     }
 
-
+    //TODO make comments for this one
     @Transactional
     public Order checkout(String name) {
 
@@ -58,7 +58,7 @@ public class OrderService {
         Order savedOrder = orderRepository.save(order);
         List<CartItem> items = shoppingCartRepository.findByUserId(userId);
 
-        for(CartItem item: items) {
+        for (CartItem item : items) {
             OrderLineItems orderLineItems = new OrderLineItems();
             orderLineItems.setOrderId(order.getOrderId());
             orderLineItems.setProductId(item.getProductId());
