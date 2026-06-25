@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="RESTORE SANITY">
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProductsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/security/JwtAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/security/JwtAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/security/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,31 +114,7 @@
       <workItem from="1782330761648" duration="13287000" />
       <workItem from="1782409416977" duration="44000" />
       <workItem from="1782409502388" duration="112000" />
-      <workItem from="1782409782728" duration="11400000" />
-    </task>
-    <task id="LOCAL-00004" summary="Finished debugging GET Request of list of products by its category id. Bug#4 closed">
-      <option name="closed" value="true" />
-      <created>1781821664170</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1781821664170</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Finished debugging POST request where the admin can only create a category . Bug#5 closed">
-      <option name="closed" value="true" />
-      <created>1781822782054</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1781822782054</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Finished debugging POST request where the admin can only create a category . Bug#6 and Bug#7 closed">
-      <option name="closed" value="true" />
-      <created>1781823357583</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1781823357583</updated>
+      <workItem from="1782409782728" duration="11773000" />
     </task>
     <task id="LOCAL-00007" summary="Finished debugging GET request where the admin can populate the categories after adding and getting the new category by id . Bug#8 and Bug#9 closed">
       <option name="closed" value="true" />
@@ -510,7 +484,31 @@
       <option name="project" value="LOCAL" />
       <updated>1782430573595</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="RESTORE SANITY">
+      <option name="closed" value="true" />
+      <created>1782430715666</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1782430715666</updated>
+    </task>
+    <task id="LOCAL-00054" summary="RESTORE SANITY">
+      <option name="closed" value="true" />
+      <created>1782430718597</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1782430718597</updated>
+    </task>
+    <task id="LOCAL-00055" summary="RESTORE SANITY">
+      <option name="closed" value="true" />
+      <created>1782430949967</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1782430949967</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
