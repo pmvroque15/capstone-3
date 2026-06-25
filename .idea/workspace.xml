@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Updated">
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/CategoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/CategoriesController.java" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="RESTORE SANITY">
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,31 +116,7 @@
       <workItem from="1782330761648" duration="13287000" />
       <workItem from="1782409416977" duration="44000" />
       <workItem from="1782409502388" duration="112000" />
-      <workItem from="1782409782728" duration="11070000" />
-    </task>
-    <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
-      <option name="closed" value="true" />
-      <created>1781819392117</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1781819392117</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Finished debugging GET Request of getting a category by id. Bug#2 closed">
-      <option name="closed" value="true" />
-      <created>1781820840708</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1781820840708</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Finished debugging GET Request of getting a category by id and returns status code 404 if category id is null. Bug#3 closed">
-      <option name="closed" value="true" />
-      <created>1781821109441</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1781821109441</updated>
+      <workItem from="1782409782728" duration="11400000" />
     </task>
     <task id="LOCAL-00004" summary="Finished debugging GET Request of list of products by its category id. Bug#4 closed">
       <option name="closed" value="true" />
@@ -507,15 +486,37 @@
       <option name="project" value="LOCAL" />
       <updated>1782430257692</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Removed default comments in the controller">
+      <option name="closed" value="true" />
+      <created>1782430546338</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1782430546338</updated>
+    </task>
+    <task id="LOCAL-00051" summary="RESTORE SANITY">
+      <option name="closed" value="true" />
+      <created>1782430563532</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1782430563533</updated>
+    </task>
+    <task id="LOCAL-00052" summary="RESTORE SANITY">
+      <option name="closed" value="true" />
+      <created>1782430573595</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1782430573595</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="README&#10;&#10;- added technology stack subcategory and linked it in the tables of contents" />
-    <MESSAGE value="README&#10;&#10;- added more subcategories: Favorite Code, What would i improve on, Author, and Closing" />
     <MESSAGE value="README&#10;&#10;- added Project Board sub category" />
     <MESSAGE value="Made changes with PUT and DELETE endpoints logic." />
     <MESSAGE value="Removed comments and added TODOs" />
@@ -539,7 +540,9 @@
     <MESSAGE value="Added business logic. Completely works now" />
     <MESSAGE value="Updated UI in the front end, checkout feature rendering in the front end." />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="Removed default comments in the controller" />
+    <MESSAGE value="RESTORE SANITY" />
+    <option name="LAST_COMMIT_MESSAGE" value="RESTORE SANITY" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
