@@ -14,6 +14,7 @@ import java.security.Principal;
 @RestController
 @RequestMapping("/profile")
 @CrossOrigin(origins = "*")
+@PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
 public class ProfileController {
 
     private ProfileService profileService;
@@ -26,7 +27,6 @@ public class ProfileController {
     }
 
     @GetMapping
-    @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
     public ResponseEntity<Profile> getProfile(Principal principal) {
         String username = principal.getName();
         User user = userService.getByUserName(username);
@@ -36,7 +36,6 @@ public class ProfileController {
     }
 
     @PutMapping
-    @PreAuthorize("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')")
     public ResponseEntity<Profile> updateProfile(Principal principal, @RequestBody Profile profile) {
         String userName = principal.getName();
         User user = userService.getByUserName(userName);

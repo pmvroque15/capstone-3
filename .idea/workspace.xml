@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="RESTORE SANITY">
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/security/JwtAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/security/JwtAccessDeniedHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/security/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,23 +113,7 @@
       <workItem from="1782330761648" duration="13287000" />
       <workItem from="1782409416977" duration="44000" />
       <workItem from="1782409502388" duration="112000" />
-      <workItem from="1782409782728" duration="11773000" />
-    </task>
-    <task id="LOCAL-00007" summary="Finished debugging GET request where the admin can populate the categories after adding and getting the new category by id . Bug#8 and Bug#9 closed">
-      <option name="closed" value="true" />
-      <created>1781823892432</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1781823892432</updated>
-    </task>
-    <task id="LOCAL-00008" summary="debugged PUT request where the admin can ONLY update the existing category. Bug#10, Bug#11, and Bug#12 closed">
-      <option name="closed" value="true" />
-      <created>1781824854773</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1781824854773</updated>
+      <workItem from="1782409782728" duration="12289000" />
     </task>
     <task id="LOCAL-00009" summary="Created DELETE requests that admin can ONLY access and GET requests after deletion working. Bugs#13 - #16 closed. Phase 1: Categories done.">
       <option name="closed" value="true" />
@@ -508,14 +491,29 @@
       <option name="project" value="LOCAL" />
       <updated>1782430949967</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Removed default comments">
+      <option name="closed" value="true" />
+      <created>1782431107946</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1782431107946</updated>
+    </task>
+    <task id="LOCAL-00057" summary="RESTORE SANITY">
+      <option name="closed" value="true" />
+      <created>1782431190206</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1782431190206</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="README&#10;&#10;- added Project Board sub category" />
     <MESSAGE value="Made changes with PUT and DELETE endpoints logic." />
     <MESSAGE value="Removed comments and added TODOs" />
     <MESSAGE value="Changed label from &quot;minimum price&quot; to &quot;maximum price&quot;" />
@@ -539,6 +537,7 @@
     <MESSAGE value="Updated UI in the front end, checkout feature rendering in the front end." />
     <MESSAGE value="Updated" />
     <MESSAGE value="Removed default comments in the controller" />
+    <MESSAGE value="Removed default comments" />
     <MESSAGE value="RESTORE SANITY" />
     <option name="LAST_COMMIT_MESSAGE" value="RESTORE SANITY" />
   </component>
