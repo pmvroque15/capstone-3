@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Updated Order class, added columns and constructor, updated method names and its return types">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/models/OrderLineItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/repository/OrderLineItemsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/models/OrderLineItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/services/shoppingcart-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/shoppingcart-service.js" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Updated">
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/CategoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/CategoriesController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +113,7 @@
       <workItem from="1782330761648" duration="13287000" />
       <workItem from="1782409416977" duration="44000" />
       <workItem from="1782409502388" duration="112000" />
-      <workItem from="1782409782728" duration="10703000" />
+      <workItem from="1782409782728" duration="11070000" />
     </task>
     <task id="LOCAL-00001" summary="Finished debugging GET Request of getting all categories.Bug#1 closed">
       <option name="closed" value="true" />
@@ -490,16 +483,37 @@
       <option name="project" value="LOCAL" />
       <updated>1782429853867</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Added business logic. Completely works now">
+      <option name="closed" value="true" />
+      <created>1782430120527</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1782430120527</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Updated UI in the front end, checkout feature rendering in the front end.">
+      <option name="closed" value="true" />
+      <created>1782430239237</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1782430239237</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1782430257692</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1782430257692</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Phase 5: Added checkout feature (work in progress)&#10;&#10;- initalized order, OrderLineItem, and layers to communicate to the database." />
-    <MESSAGE value="Phase 5 feature(checkout): added more fields in the OrderLineItem class and still work in progress&#10;&#10;Initialized README file" />
-    <MESSAGE value="README&#10;&#10;- added header and new sub categories: Table of contents, Over view, and Features." />
     <MESSAGE value="README&#10;&#10;- added technology stack subcategory and linked it in the tables of contents" />
     <MESSAGE value="README&#10;&#10;- added more subcategories: Favorite Code, What would i improve on, Author, and Closing" />
     <MESSAGE value="README&#10;&#10;- added Project Board sub category" />
@@ -522,7 +536,10 @@
     <MESSAGE value="Edited READme" />
     <MESSAGE value="Cleaned repository; did not use the derived query" />
     <MESSAGE value="Updated Order class, added columns and constructor, updated method names and its return types" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Order class, added columns and constructor, updated method names and its return types" />
+    <MESSAGE value="Added business logic. Completely works now" />
+    <MESSAGE value="Updated UI in the front end, checkout feature rendering in the front end." />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
