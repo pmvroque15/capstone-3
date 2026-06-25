@@ -29,29 +29,19 @@ public class ProfileController {
     @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
     public ResponseEntity<Profile> getProfile(Principal principal) {
         String username = principal.getName();
-
         User user = userService.getByUserName(username);
-
         int userId = user.getId();
-
         Profile profile = profileService.getProfileByUserId(userId);
-
         return ResponseEntity.ok(profile);
-
     }
 
     @PutMapping
     @PreAuthorize("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')")
-    public ResponseEntity<Profile> updateProfile(Principal  principal, @RequestBody Profile profile) {
+    public ResponseEntity<Profile> updateProfile(Principal principal, @RequestBody Profile profile) {
         String userName = principal.getName();
-
         User user = userService.getByUserName(userName);
-
         int userId = user.getId();
-
         Profile updateProfile = profileService.updateProfile(userId, profile);
-
         return ResponseEntity.ok(updateProfile);
-
     }
 }

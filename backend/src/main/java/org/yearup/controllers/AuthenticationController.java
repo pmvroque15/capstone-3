@@ -43,8 +43,7 @@ public class AuthenticationController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public ResponseEntity<LoginResponseDto> login(@Valid @RequestBody LoginDto loginDto) {
-        try
-        {
+        try {
             UsernamePasswordAuthenticationToken authenticationToken =
                     new UsernamePasswordAuthenticationToken(loginDto.getUsername(), loginDto.getPassword());
 
@@ -57,10 +56,7 @@ public class AuthenticationController {
             HttpHeaders httpHeaders = new HttpHeaders();
             httpHeaders.add(JWTFilter.AUTHORIZATION_HEADER, "Bearer " + jwt);
             return new ResponseEntity<>(new LoginResponseDto(jwt, user), httpHeaders, HttpStatus.OK);
-        }
-        catch (AuthenticationException e)
-        {
-            // bad username/password -> 401 (not a 500)
+        } catch (AuthenticationException e) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Invalid username or password.");
         }
     }
@@ -70,16 +66,10 @@ public class AuthenticationController {
     public ResponseEntity<User> register(@Valid @RequestBody RegisterUserDto newUser) {
 
         boolean exists = userService.exists(newUser.getUsername());
-        if (exists)
-        {
-            // duplicate username -> 400 (not a 500)
+        if (exists) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User Already Exists.");
         }
-
-        // create user
         User user = userService.create(new User(0, newUser.getUsername(), newUser.getPassword(), newUser.getRole()));
-
-        // create profile
         Profile profile = new Profile();
         profile.setUserId(user.getId());
         profileService.create(profile);

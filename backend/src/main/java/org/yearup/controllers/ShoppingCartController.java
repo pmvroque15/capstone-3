@@ -19,8 +19,7 @@ import java.security.Principal;
 @RequestMapping("/cart")
 @CrossOrigin(origins = "*")
 @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
-public class ShoppingCartController
-{
+public class ShoppingCartController {
 
     private ShoppingCartService shoppingCartService;
 
@@ -37,14 +36,13 @@ public class ShoppingCartController
         }
 
         ShoppingCart cart = shoppingCartService.getCart(principal);
-
         return ResponseEntity.ok(cart);
     }
 
     @PostMapping("/products/{productId}")
     public ResponseEntity<ShoppingCart> addProductToCart(@PathVariable int productId, Principal principal) {
 
-        ShoppingCart updatedCart =  shoppingCartService.addProduct(principal, productId);
+        ShoppingCart updatedCart = shoppingCartService.addProduct(principal, productId);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(updatedCart);
     }
@@ -63,7 +61,7 @@ public class ShoppingCartController
         shoppingCartService.clearItems(userId);
         ShoppingCart cart = shoppingCartService.getCart(principal);
 
-        return  ResponseEntity.status(HttpStatus.OK).body(cart);
+        return ResponseEntity.status(HttpStatus.OK).body(cart);
     }
 
 }
