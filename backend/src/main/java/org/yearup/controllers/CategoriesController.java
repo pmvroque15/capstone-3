@@ -16,62 +16,56 @@ import java.util.List;
 @RestController
 @RequestMapping("/categories")
 @CrossOrigin(origins = "*")
-public class CategoriesController
-{
+public class CategoriesController {
     private CategoryService categoryService;
     private ProductService productService;
+
     @Autowired
     public CategoriesController(CategoryService categoryService, ProductService productService) {
         this.categoryService = categoryService;
         this.productService = productService;
     }
-    
+
     @GetMapping
-    public ResponseEntity<List<Category>> getAll()
-    {
+    public ResponseEntity<List<Category>> getAll() {
         List<Category> categories = categoryService.getAllCategories();
         return ResponseEntity.ok(categories);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Category> getById(@PathVariable int id)
-    {
+    public ResponseEntity<Category> getById(@PathVariable int id) {
         Category category = categoryService.getById(id);
-        if(category == null) {
+        if (category == null) {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(category);
     }
 
     @GetMapping("/{categoryId}/products")
-    public ResponseEntity<List<Product>> getProductsById(@PathVariable int categoryId)
-    {
+    public ResponseEntity<List<Product>> getProductsById(@PathVariable int categoryId) {
         List<Product> products = productService.listByCategoryId(categoryId);
         return ResponseEntity.ok(products);
     }
 
     @PostMapping
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public ResponseEntity<Category> addCategory(@RequestBody Category category)
-    {
+    public ResponseEntity<Category> addCategory(@RequestBody Category category) {
         Category newCategory = categoryService.create(category);
         return ResponseEntity.status(HttpStatus.CREATED).body(newCategory);
     }
 
     @PutMapping("/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public ResponseEntity<Category> updateCategory(@PathVariable int id, @RequestBody Category category)
-    {
+    public ResponseEntity<Category> updateCategory(@PathVariable int id, @RequestBody Category category) {
         Category updatedCategory = categoryService.update(id, category);
         return ResponseEntity.ok(updatedCategory);
     }
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public ResponseEntity<Void> deleteCategory(@PathVariable int id)
-    {
+    public ResponseEntity<Void> deleteCategory(@PathVariable int id) {
         categoryService.delete(id);
-        
+
         return ResponseEntity.noContent().build();
     }
 }
