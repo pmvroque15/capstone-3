@@ -26,7 +26,7 @@ public class ShoppingCartService {
      * Retrieves the ID of the currently authenticated user
      *
      * @param principal the authenticated user
-     * @return the iD of the authenticated user
+     * @return the ID of the authenticated user
      */
     public int getUserId(Principal principal) {
 

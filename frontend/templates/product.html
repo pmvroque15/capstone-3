@@ -1,13 +1,13 @@
 {{#products}}
 <div class="product">
-    <div>
-        <h4>{{name}}</h4>
-        <div class="photo">
-            <img src="./images/products/{{imageUrl}}" alt=""
-                 onclick="showImageDetailForm(`{{name}}`,'/images/products/{{imageUrl}}')"
+    <div class="product-info">
+        <div class="photo product-media">
+            <img src="./images/products/{{displayImageUrl}}" alt=""
+                 onclick="showImageDetailForm(`{{name}}`,'/images/products/{{displayImageUrl}}')"
             >
-          <h4 class="price">${{price}}</h4>
+            <div class="price">${{price}}</div>
         </div>
+        <h4>{{name}}</h4>
         <div>
             <p>{{description}}</p>
         </div>
@@ -35,5 +35,17 @@
             Add to Cart
         </button>
     </div>
+    {{#isAdmin}}
+    <div class="admin-card-actions">
+        <button class="btn btn-outline-primary" onclick="productService.showEditProductForm({{productId}})">
+            <i class="fa-solid fa-pen-to-square"></i>
+            Edit
+        </button>
+        <button class="btn btn-outline-danger" onclick="productService.deleteProduct({{productId}})">
+            <i class="fa-solid fa-trash"></i>
+            Delete
+        </button>
+    </div>
+    {{/isAdmin}}
 </div>
 {{/products}}

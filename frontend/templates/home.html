@@ -1,6 +1,18 @@
 <div class="filter-box">
     <h3>Filter</h3>
 
+    <div id="admin-catalog-tools" class="admin-catalog-tools hidden">
+        <button type="button" class="btn btn-success" onclick="productService.showAddProductForm()">
+            <i class="fa-solid fa-plus"></i>
+            Product
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="categoryService.showAddCategoryForm()">
+            <i class="fa-solid fa-plus"></i>
+            Category
+        </button>
+        <div id="admin-category-list" class="admin-category-list"></div>
+    </div>
+
     <div class="form-floating mb-3">
         <select name="" id="category-select" class="form-select"
             onchange="setCategory(this)"

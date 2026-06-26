@@ -67,6 +67,11 @@ class UserService {
         return this.currentUser.token !== undefined;
     }
 
+    isAdmin()
+    {
+        return this.currentUser.role === 'ROLE_ADMIN' || this.currentUser.role === 'ADMIN';
+    }
+
     getCurrentUser()
     {
         return this.currentUser;
@@ -121,7 +126,8 @@ class UserService {
                 this.setHeaderLogin();
 
                 axios.defaults.headers.common = {'Authorization': `Bearer ${this.currentUser.token}`}
-                productService.enableButtons();
+                productService.search();
+                this.refreshCatalogControls();
                 cartService.loadCart();
             })
             .catch(error => {
@@ -141,7 +147,15 @@ class UserService {
 
         this.setHeaderLogin();
 
-        productService.enableButtons();
+        productService.search();
+        this.refreshCatalogControls();
+    }
+
+    refreshCatalogControls()
+    {
+        if (document.getElementById("category-select")) {
+            categoryService.getAllCategories(loadCategories);
+        }
     }
 
 }
