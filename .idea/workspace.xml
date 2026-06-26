@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Creadet Javadocs comment on top of the method checkout()">
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Created Javadocs comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,15 +114,7 @@
       <workItem from="1782330761648" duration="13287000" />
       <workItem from="1782409416977" duration="44000" />
       <workItem from="1782409502388" duration="112000" />
-      <workItem from="1782409782728" duration="13688000" />
-    </task>
-    <task id="LOCAL-00012" summary="feature (cart): implement cart retrieval and add-to-cart functionality&#10;&#10;- Retrieve cart items for authenticated users and admins&#10;- Include product descriptions in cart responses&#10;- Add products to shopping cart&#10;- Increment quantity when product already exists in cart">
-      <option name="closed" value="true" />
-      <created>1781893298064</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1781893298064</updated>
+      <workItem from="1782409782728" duration="15696000" />
     </task>
     <task id="LOCAL-00013" summary="feature (cart): implement cart retrieval and add-to-cart functionality&#10;&#10;- Retrieve cart items for authenticated users and admins&#10;- Include product descriptions in cart responses&#10;- Add products to shopping cart&#10;- Increment quantity when product already exists in cart">
       <option name="closed" value="true" />
@@ -508,14 +500,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782432051918</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Created Javadocs comment">
+      <option name="closed" value="true" />
+      <created>1782433023631</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1782433023631</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed label from &quot;minimum price&quot; to &quot;maximum price&quot;" />
     <MESSAGE value="Fixed roles string parameters for more consistency." />
     <MESSAGE value="Cleaned features subcategory" />
     <MESSAGE value="Deleted userService class" />
@@ -540,7 +539,8 @@
     <MESSAGE value="RESTORE SANITY" />
     <MESSAGE value="Moved @PreAuthorized annotation on the class instead of annotating every methods" />
     <MESSAGE value="Creadet Javadocs comment on top of the method checkout()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creadet Javadocs comment on top of the method checkout()" />
+    <MESSAGE value="Created Javadocs comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Javadocs comment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
