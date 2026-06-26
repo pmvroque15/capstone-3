@@ -2,7 +2,9 @@ package org.yearup.service;
 
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 import org.yearup.models.*;
 import org.yearup.repository.*;
 
@@ -14,10 +16,10 @@ public class OrderService {
 
     private final ShoppingCartRepository shoppingCartRepository;
     private final OrderLineItemsRepository orderLineItemsRepository;
-    private OrderRepository orderRepository;
-    private UserRepository userRepository;
-    private ProfileRepository profileRepository;
-    private ProductRepository productRepository;
+    private final OrderRepository orderRepository;
+    private final UserRepository userRepository;
+    private final ProfileRepository profileRepository;
+    private final ProductRepository productRepository;
 
     @Autowired
     public OrderService(ShoppingCartRepository shoppingCartRepository, OrderRepository orderRepository, UserRepository userRepository, ProfileRepository profileRepository, ProductRepository productRepository, OrderLineItemsRepository orderLineItemsRepository) {
@@ -44,6 +46,11 @@ public class OrderService {
         User user = userRepository.findByUsername(name);
         int userId = user.getId();
 
+        List<CartItem> items = shoppingCartRepository.findByUserId(userId);
+        if (items == null || items.isEmpty()) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Cannot checkout with an empty cart");
+        }
+
         Profile userProfile = profileRepository.findByUserId(userId);
 
         Order order = new Order();
@@ -55,8 +62,6 @@ public class OrderService {
         order.setZip(userProfile.getZip());
         order.setShippingAmount(0);
         Order savedOrder = orderRepository.save(order);
-
-        List<CartItem> items = shoppingCartRepository.findByUserId(userId);
 
         for (CartItem item : items) {
             OrderLineItems orderLineItems = new OrderLineItems();

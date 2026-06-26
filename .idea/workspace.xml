@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Created Javadocs comments">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Changed the parameter of the getCart() and edited the arguments">
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,15 +115,7 @@
       <workItem from="1782409416977" duration="44000" />
       <workItem from="1782409502388" duration="112000" />
       <workItem from="1782409782728" duration="15799000" />
-      <workItem from="1782435789287" duration="1468000" />
-    </task>
-    <task id="LOCAL-00014" summary="feature (cart): add endpoint to clear shopping cart &#10;&#10;- Deletes all items for the current user&#10;- Returns 200 OK on success&#10;- Returns an empty cart after deletion">
-      <option name="closed" value="true" />
-      <created>1781930172182</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1781930172182</updated>
+      <workItem from="1782435789287" duration="1781000" />
     </task>
     <task id="LOCAL-00015" summary="JS Header: logo image fixed">
       <option name="closed" value="true" />
@@ -510,14 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782435117915</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Changed the parameter of the getCart() and edited the arguments">
+      <option name="closed" value="true" />
+      <created>1782437312551</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1782437312551</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cleaned features subcategory" />
     <MESSAGE value="Deleted userService class" />
     <MESSAGE value="update" />
     <MESSAGE value="updated banner" />
@@ -542,7 +540,8 @@
     <MESSAGE value="Creadet Javadocs comment on top of the method checkout()" />
     <MESSAGE value="Created Javadocs comment" />
     <MESSAGE value="Created Javadocs comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Javadocs comments" />
+    <MESSAGE value="Changed the parameter of the getCart() and edited the arguments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the parameter of the getCart() and edited the arguments" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

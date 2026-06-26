@@ -18,6 +18,7 @@ import java.security.Principal;
 @RestController
 @RequestMapping("/orders")
 @CrossOrigin(origins = "*")
+@PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
 public class OrderController {
 
     private final UserService userService;
@@ -32,7 +33,6 @@ public class OrderController {
     }
 
     @PostMapping
-    @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
     public ResponseEntity<Order> createOrder(Principal principal) {
 
         Order order = orderService.checkout(principal.getName());
