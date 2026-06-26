@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="updated frontend UI" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Added javadoc comment">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,22 +120,7 @@
       <workItem from="1782443927971" duration="6403000" />
       <workItem from="1782455287423" duration="21000" />
       <workItem from="1782455311512" duration="25000" />
-    </task>
-    <task id="LOCAL-00017" summary="JS product-service image bug: little image src file bug fix. Images rendering on the cart">
-      <option name="closed" value="true" />
-      <created>1781982507358</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1781982507358</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Phase 4 feature (profile): add profile view and update functionality&#10;&#10;- add endpoint to logged-in user's profile&#10;- add endpoint to update the logged-in user's profile &#10;- update JS header  state for logged-out users, logo img src path fix">
-      <option name="closed" value="true" />
-      <created>1782016185788</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1782016185788</updated>
+      <workItem from="1782455380472" duration="401000" />
     </task>
     <task id="LOCAL-00019" summary="Phase 5: Added checkout feature (work in progress)&#10;&#10;- initalized order, OrderLineItem, and layers to communicate to the database.">
       <option name="closed" value="true" />
@@ -511,14 +498,29 @@
       <option name="project" value="LOCAL" />
       <updated>1782455326473</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Added javadoc comment">
+      <option name="closed" value="true" />
+      <created>1782455549815</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1782455549816</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Added javadoc comment">
+      <option name="closed" value="true" />
+      <created>1782455668386</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1782455668386</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated banner" />
     <MESSAGE value="Refactored controller and service layer; made a helper method to get the user's ID. Preventing from DRY principle and keep the responsibilities between the two layers clear." />
     <MESSAGE value="Updated UI, made the UI sleeker and added quantity feature" />
     <MESSAGE value="moved @PreAuthorized feature on the controller class to keep from DRY" />
@@ -543,7 +545,8 @@
     <MESSAGE value="Changed the parameter of the getCart() and edited the arguments" />
     <MESSAGE value="Added a check; making sure that if the user checked out it would throw an error when the shopping cart is empty." />
     <MESSAGE value="updated frontend UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated frontend UI" />
+    <MESSAGE value="Added javadoc comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added javadoc comment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

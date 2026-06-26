@@ -11,6 +11,7 @@
 - [What Would I Improve On](#what-would-i-improve-on-)
 - [Author](#author)
 - [Resources](#resources)
+- [Acknowledgements](#acknowledgements)
 ---
 ### Overview
 
@@ -101,3 +102,15 @@ Sehjal, H. (n.d.). User story template [GitHub Gist]. GitHub. https://gist.githu
 
 Spring Framework Documentation – Transaction Management in the TestContext Framework
 Spring Team. (n.d.). Transaction management. In Spring Framework Reference Documentation. Retrieved June 24, 2026, from https://docs.spring.io/spring-framework/reference/testing/testcontext-framework/tx.html#testcontext-tx-attribute-support
+
+---
+
+### Acknowledgements
+
+I would like to express my sincere gratitude to David for being an incredible instructor throughout this bootcamp. Thank you for your patience, guidance, and encouragement every step of the way. Your passion for teaching and willingness to help us understand challenging concepts made a lasting impact on my learning journey.
+
+This bootcamp has been one of the most rewarding experiences I've had. I not only gained valuable technical skills but also learned how to think like a developer, solve problems, and keep pushing through challenges. Looking back at where I started and where I am now, I'm proud of how much I've grown.
+
+To my classmates, thank you for making this experience memorable. I'll truly miss learning, collaborating, and overcoming obstacles together.
+
+Thank you, David, for believing in us and helping us build a strong foundation for our careers. This is only the beginning, and I'll always be grateful for everything I learned during this journey.
