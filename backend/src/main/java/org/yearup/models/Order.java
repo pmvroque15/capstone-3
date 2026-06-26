@@ -6,6 +6,9 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/**
+ * Entity class that represents an individual item within a customer's order
+ */
 @Entity
 @Table(name = "orders")
 public class Order {
