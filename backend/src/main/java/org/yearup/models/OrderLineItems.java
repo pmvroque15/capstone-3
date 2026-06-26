@@ -3,6 +3,9 @@ package org.yearup.models;
 
 import jakarta.persistence.*;
 
+/**
+ * Entity class that represents a customer's order after checkout
+ */
 @Entity
 @Table(name = "order_line_items")
 public class OrderLineItems {

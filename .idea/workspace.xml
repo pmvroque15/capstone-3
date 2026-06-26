@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Added a check; making sure that if the user checked out it would throw an error when the shopping cart is empty.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/services/categories-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/categories-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/services/products-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/products-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/services/user-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/services/user-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/product.html" afterDir="false" />
-    </list>
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="updated frontend UI" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,14 +117,7 @@
       <workItem from="1782440523502" duration="850000" />
       <workItem from="1782443927971" duration="6403000" />
       <workItem from="1782455287423" duration="21000" />
-    </task>
-    <task id="LOCAL-00016" summary="JS product-service image bug: little image src file bug fix. Images rendering on the cart">
-      <option name="closed" value="true" />
-      <created>1781981864918</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1781981864918</updated>
+      <workItem from="1782455311512" duration="25000" />
     </task>
     <task id="LOCAL-00017" summary="JS product-service image bug: little image src file bug fix. Images rendering on the cart">
       <option name="closed" value="true" />
@@ -520,14 +503,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782437783776</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="updated frontend UI">
+      <option name="closed" value="true" />
+      <created>1782455326473</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1782455326473</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
     <MESSAGE value="updated banner" />
     <MESSAGE value="Refactored controller and service layer; made a helper method to get the user's ID. Preventing from DRY principle and keep the responsibilities between the two layers clear." />
     <MESSAGE value="Updated UI, made the UI sleeker and added quantity feature" />
@@ -552,7 +542,8 @@
     <MESSAGE value="Created Javadocs comments" />
     <MESSAGE value="Changed the parameter of the getCart() and edited the arguments" />
     <MESSAGE value="Added a check; making sure that if the user checked out it would throw an error when the shopping cart is empty." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a check; making sure that if the user checked out it would throw an error when the shopping cart is empty." />
+    <MESSAGE value="updated frontend UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated frontend UI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
