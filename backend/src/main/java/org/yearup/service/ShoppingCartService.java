@@ -41,14 +41,14 @@ public class ShoppingCartService {
      * The cart is populated with the user's cart item and their
      * corresponding product information.
      *
-     * @param principal the authenticated user
+     * @param userId the ID of the authenticated user
      * @return the shopping cart for the authenticated user
      */
-    public ShoppingCart getCart(Principal principal) {
+    public ShoppingCart getCart(int userId) {
         // load the user's cart rows, look up each product, and build the ShoppingCart
         ShoppingCart shoppingCart = new ShoppingCart();
 
-        List<CartItem> cartItems = shoppingCartRepository.findByUserId(getUserId(principal));
+        List<CartItem> cartItems = shoppingCartRepository.findByUserId(userId);
 
         for (CartItem cartItem : cartItems) {
             Product product = productService.getById(cartItem.getProductId());
@@ -73,6 +73,7 @@ public class ShoppingCartService {
      *
      */
     public ShoppingCart addProduct(Principal principal, int productId) {
+        int userId = getUserId(principal);
         CartItem product = new CartItem();
 
         product.setUserId(getUserId(principal));
@@ -88,7 +89,7 @@ public class ShoppingCartService {
             shoppingCartRepository.save(userAndProduct);
         }
 
-        return getCart(principal);
+        return getCart(userId);
     }
 
     /**
@@ -105,7 +106,7 @@ public class ShoppingCartService {
         cartItem.setQuantity(item.getQuantity());
         shoppingCartRepository.save(cartItem);
 
-        return getCart(principal);
+        return getCart(userId);
     }
 
     /**

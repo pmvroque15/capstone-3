@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Created Javadocs comment">
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Created Javadocs comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ShoppingCartService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,15 +115,8 @@
       <workItem from="1782330761648" duration="13287000" />
       <workItem from="1782409416977" duration="44000" />
       <workItem from="1782409502388" duration="112000" />
-      <workItem from="1782409782728" duration="15696000" />
-    </task>
-    <task id="LOCAL-00013" summary="feature (cart): implement cart retrieval and add-to-cart functionality&#10;&#10;- Retrieve cart items for authenticated users and admins&#10;- Include product descriptions in cart responses&#10;- Add products to shopping cart&#10;- Increment quantity when product already exists in cart">
-      <option name="closed" value="true" />
-      <created>1781927224892</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1781927224892</updated>
+      <workItem from="1782409782728" duration="15799000" />
+      <workItem from="1782435789287" duration="1468000" />
     </task>
     <task id="LOCAL-00014" summary="feature (cart): add endpoint to clear shopping cart &#10;&#10;- Deletes all items for the current user&#10;- Returns 200 OK on success&#10;- Returns an empty cart after deletion">
       <option name="closed" value="true" />
@@ -508,14 +502,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782433023631</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Created Javadocs comments">
+      <option name="closed" value="true" />
+      <created>1782435117914</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1782435117915</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed roles string parameters for more consistency." />
     <MESSAGE value="Cleaned features subcategory" />
     <MESSAGE value="Deleted userService class" />
     <MESSAGE value="update" />
@@ -540,7 +541,8 @@
     <MESSAGE value="Moved @PreAuthorized annotation on the class instead of annotating every methods" />
     <MESSAGE value="Creadet Javadocs comment on top of the method checkout()" />
     <MESSAGE value="Created Javadocs comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Javadocs comment" />
+    <MESSAGE value="Created Javadocs comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Javadocs comments" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

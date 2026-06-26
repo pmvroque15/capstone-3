@@ -31,11 +31,12 @@ public class ShoppingCartController {
 
     @GetMapping
     public ResponseEntity<ShoppingCart> getCart(Principal principal) {
+        int userId = shoppingCartService.getUserId(principal);
         if (principal == null) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
 
-        ShoppingCart cart = shoppingCartService.getCart(principal);
+        ShoppingCart cart = shoppingCartService.getCart(userId);
         return ResponseEntity.ok(cart);
     }
 
@@ -59,7 +60,7 @@ public class ShoppingCartController {
     public ResponseEntity<ShoppingCart> deleteProductFromCart(Principal principal) {
         int userId = shoppingCartService.getUserId(principal);
         shoppingCartService.clearItems(userId);
-        ShoppingCart cart = shoppingCartService.getCart(principal);
+        ShoppingCart cart = shoppingCartService.getCart(userId);
 
         return ResponseEntity.status(HttpStatus.OK).body(cart);
     }
