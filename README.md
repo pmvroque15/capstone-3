@@ -114,3 +114,5 @@ This bootcamp has been one of the most rewarding experiences I've had. I not onl
 To my classmates, thank you for making this experience memorable. I'll truly miss learning, collaborating, and overcoming obstacles together.
 
 Thank you, David, for believing in us and helping us build a strong foundation for our careers. This is only the beginning, and I'll always be grateful for everything I learned during this journey.
+
+![dog-scroll.gif](backend/src/main/resources/readme-images/dog-scroll.gif)
