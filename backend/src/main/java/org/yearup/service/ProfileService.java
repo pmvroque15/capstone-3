@@ -24,6 +24,15 @@ public class ProfileService {
         return profileRepository.findByUserId(id);
     }
 
+    /**
+     * Updates the profile information for the specific user.
+     * The existing profile is retrieved, updated with the provided
+     * values, and then saved to the database.
+     *
+     * @param userId the ID of the user whose profile will be updated
+     * @param profile profile containing the information
+     * @return the updated and saved profile.
+     */
     @Transactional
     public Profile updateProfile(int userId, Profile profile) {
         Profile existingProfile = profileRepository.findByUserId(userId);

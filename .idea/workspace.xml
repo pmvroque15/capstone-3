@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Moved @PreAuthorized annotation on the class instead of annotating every methods">
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/OrderService.java" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Creadet Javadocs comment on top of the method checkout()">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/ProfileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,23 +114,7 @@
       <workItem from="1782330761648" duration="13287000" />
       <workItem from="1782409416977" duration="44000" />
       <workItem from="1782409502388" duration="112000" />
-      <workItem from="1782409782728" duration="12704000" />
-    </task>
-    <task id="LOCAL-00010" summary="Bug #17: took a method out of the streams in the search() of ProductService class.">
-      <option name="closed" value="true" />
-      <created>1781828373089</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1781828373089</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Phase 2: All GET requests are working. Added missing logic in updating a product.">
-      <option name="closed" value="true" />
-      <created>1781838003225</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1781838003225</updated>
+      <workItem from="1782409782728" duration="13688000" />
     </task>
     <task id="LOCAL-00012" summary="feature (cart): implement cart retrieval and add-to-cart functionality&#10;&#10;- Retrieve cart items for authenticated users and admins&#10;- Include product descriptions in cart responses&#10;- Add products to shopping cart&#10;- Increment quantity when product already exists in cart">
       <option name="closed" value="true" />
@@ -507,14 +492,29 @@
       <option name="project" value="LOCAL" />
       <updated>1782431646682</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Creadet Javadocs comment on top of the method checkout()">
+      <option name="closed" value="true" />
+      <created>1782432048702</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1782432048702</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Creadet Javadocs comment on top of the method checkout()">
+      <option name="closed" value="true" />
+      <created>1782432051918</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1782432051918</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed comments and added TODOs" />
     <MESSAGE value="Changed label from &quot;minimum price&quot; to &quot;maximum price&quot;" />
     <MESSAGE value="Fixed roles string parameters for more consistency." />
     <MESSAGE value="Cleaned features subcategory" />
@@ -539,7 +539,8 @@
     <MESSAGE value="Removed default comments" />
     <MESSAGE value="RESTORE SANITY" />
     <MESSAGE value="Moved @PreAuthorized annotation on the class instead of annotating every methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved @PreAuthorized annotation on the class instead of annotating every methods" />
+    <MESSAGE value="Creadet Javadocs comment on top of the method checkout()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creadet Javadocs comment on top of the method checkout()" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
