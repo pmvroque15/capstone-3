@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="RESTORE SANITY">
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/controllers/ProfileController.java" afterDir="false" />
+    <list default="true" id="355a3a2d-4aaf-4d83-91c5-35117960fa71" name="Changes" comment="Moved @PreAuthorized annotation on the class instead of annotating every methods">
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/yearup/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,15 +113,7 @@
       <workItem from="1782330761648" duration="13287000" />
       <workItem from="1782409416977" duration="44000" />
       <workItem from="1782409502388" duration="112000" />
-      <workItem from="1782409782728" duration="12289000" />
-    </task>
-    <task id="LOCAL-00009" summary="Created DELETE requests that admin can ONLY access and GET requests after deletion working. Bugs#13 - #16 closed. Phase 1: Categories done.">
-      <option name="closed" value="true" />
-      <created>1781825425491</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1781825425491</updated>
+      <workItem from="1782409782728" duration="12704000" />
     </task>
     <task id="LOCAL-00010" summary="Bug #17: took a method out of the streams in the search() of ProductService class.">
       <option name="closed" value="true" />
@@ -507,14 +499,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782431190206</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Moved @PreAuthorized annotation on the class instead of annotating every methods">
+      <option name="closed" value="true" />
+      <created>1782431646682</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1782431646682</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made changes with PUT and DELETE endpoints logic." />
     <MESSAGE value="Removed comments and added TODOs" />
     <MESSAGE value="Changed label from &quot;minimum price&quot; to &quot;maximum price&quot;" />
     <MESSAGE value="Fixed roles string parameters for more consistency." />
@@ -539,7 +538,8 @@
     <MESSAGE value="Removed default comments in the controller" />
     <MESSAGE value="Removed default comments" />
     <MESSAGE value="RESTORE SANITY" />
-    <option name="LAST_COMMIT_MESSAGE" value="RESTORE SANITY" />
+    <MESSAGE value="Moved @PreAuthorized annotation on the class instead of annotating every methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved @PreAuthorized annotation on the class instead of annotating every methods" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
